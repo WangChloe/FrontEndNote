@@ -1,0 +1,571 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>2、mpvue · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="wepy.html" />
+    
+    
+    <link rel="prev" href="微信api.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        <li class="header">Vue</li>
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../vue/v1.html">
+            
+                <a href="../vue/v1.html">
+            
+                    
+                    1、v1
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../vue/v2.html">
+            
+                <a href="../vue/v2.html">
+            
+                    
+                    2、v2
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../vue/深入.html">
+            
+                <a href="../vue/深入.html">
+            
+                    
+                    3、深入
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">小程序</li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" data-path="微信api.html">
+            
+                <a href="微信api.html">
+            
+                    
+                    1、微信api
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="2.2" data-path="mpvue.html">
+            
+                <a href="mpvue.html">
+            
+                    
+                    2、mpvue
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" data-path="wepy.html">
+            
+                <a href="wepy.html">
+            
+                    
+                    3、wepy
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >2、mpvue</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <!-- MarkdownTOC -->
+<ul>
+<li>&#x751F;&#x547D;&#x5468;&#x671F;<ul>
+<li>vue &#x751F;&#x547D;&#x5468;&#x671F;</li>
+<li>&#x5C0F;&#x7A0B;&#x5E8F;&#x751F;&#x547D;&#x5468;&#x671F;</li>
+</ul>
+</li>
+<li>&#x6A21;&#x7248;&#x8BED;&#x6CD5;</li>
+<li>&#x5E38;&#x89C1;&#x95EE;&#x9898;</li>
+</ul>
+<!-- /MarkdownTOC -->
+<p><img src="https://raw.githubusercontent.com/aYangLi/image-folder/master/youdao/small-programs.jpeg" alt=""></p>
+<h2 id="&#x751F;&#x547D;&#x5468;&#x671F;">&#x751F;&#x547D;&#x5468;&#x671F;</h2>
+<p>&#x5C0F;&#x7A0B;&#x5E8F;onReady&#x540E;&#x518D;&#x89E6;&#x53D1;vue mouted</p>
+<p><img src="http://mpvue.com/assets/lifecycle.jpg" alt=""></p>
+<h3 id="vue-&#x751F;&#x547D;&#x5468;&#x671F;">vue &#x751F;&#x547D;&#x5468;&#x671F;</h3>
+<ul>
+<li><p>beforeCreate</p>
+</li>
+<li><p>created</p>
+</li>
+<li><p>beforeMount</p>
+</li>
+<li><p>mounted</p>
+</li>
+<li><p>beforeUpdate</p>
+</li>
+<li><p>updated</p>
+</li>
+<li><p>activated</p>
+</li>
+<li><p>deactivated</p>
+</li>
+<li><p>beforeDestroy</p>
+</li>
+<li><p>destroyed</p>
+</li>
+</ul>
+<h3 id="&#x5C0F;&#x7A0B;&#x5E8F;&#x751F;&#x547D;&#x5468;&#x671F;">&#x5C0F;&#x7A0B;&#x5E8F;&#x751F;&#x547D;&#x5468;&#x671F;</h3>
+<blockquote>
+<p>&#x9664;&#x7279;&#x6B8A;&#x60C5;&#x51B5;&#x5916;&#xFF0C;&#x4E0D;&#x5EFA;&#x8BAE;&#x4F7F;&#x7528;&#x5C0F;&#x7A0B;&#x5E8F;&#x7684;&#x751F;&#x547D;&#x5468;&#x671F;&#x94A9;&#x5B50;&#x3002;</p>
+</blockquote>
+<p>app &#x90E8;&#x5206;&#xFF1A;</p>
+<ul>
+<li><p>onLaunch &#x521D;&#x59CB;&#x5316;</p>
+</li>
+<li><p>onShow &#x5F53;&#x5C0F;&#x7A0B;&#x5E8F;&#x542F;&#x52A8;&#x6216;&#x4ECE;&#x540E;&#x53F0;&#x8FDB;&#x5165;&#x524D;&#x53F0;&#x663E;&#x793A;</p>
+</li>
+<li><p>onHide &#x5F53;&#x5C0F;&#x7A0B;&#x5E8F;&#x4ECE;&#x524D;&#x53F0;&#x8FDB;&#x5165;&#x540E;&#x53F0;</p>
+</li>
+</ul>
+<p>page &#x90E8;&#x5206;&#xFF1A;</p>
+<ul>
+<li><p>onLoad &#x76D1;&#x542C;&#x9875;&#x9762;&#x52A0;&#x8F7D;</p>
+</li>
+<li><p>onShow &#x76D1;&#x542C;&#x9875;&#x9762;&#x663E;&#x793A;</p>
+</li>
+<li><p>onReady &#x76D1;&#x542C;&#x9875;&#x9762;&#x521D;&#x6B21;&#x6E32;&#x67D3;&#x5B8C;&#x6210;</p>
+</li>
+<li><p>onHide &#x76D1;&#x542C;&#x9875;&#x9762;&#x9690;&#x85CF;</p>
+</li>
+<li><p>onUnload &#x76D1;&#x542C;&#x9875;&#x9762;&#x5378;&#x8F7D;</p>
+</li>
+<li><p>onPullDownRefresh &#x76D1;&#x542C;&#x7528;&#x6237;&#x4E0B;&#x62C9;&#x52A8;&#x4F5C;</p>
+</li>
+<li><p>onReachBottom &#x9875;&#x9762;&#x4E0A;&#x62C9;&#x89E6;&#x5E95;&#x4E8B;&#x4EF6;&#x7684;&#x5904;&#x7406;&#x51FD;&#x6570;</p>
+</li>
+<li><p>onShareAppMessage &#x7528;&#x6237;&#x70B9;&#x51FB;&#x53F3;&#x4E0A;&#x89D2;&#x5206;&#x4EAB;</p>
+</li>
+<li><p>onPageScroll &#x9875;&#x9762;&#x6EDA;&#x52A8;</p>
+</li>
+<li><p>onTabItemTap &#x5F53;&#x524D;&#x662F; tab &#x9875;&#x65F6; &#x70B9;&#x51FB; tab &#x65F6;&#x89E6;&#x53D1; &#xFF08;mpvue 0.0.16 &#x652F;&#x6301;&#xFF09;</p>
+</li>
+</ul>
+<pre><code>new Vue({
+  data: {
+    a: 1
+  },
+  created () {
+    // `this` &#x6307;&#x5411; vm &#x5B9E;&#x4F8B;
+    console.log(&apos;a is: &apos; + this.a)
+  },
+  onShow () {
+    // `this` &#x6307;&#x5411; vm &#x5B9E;&#x4F8B;
+    console.log(&apos;a is: &apos; + this.a, &apos;&#x5C0F;&#x7A0B;&#x5E8F;&#x89E6;&#x53D1;&#x7684; onshow&apos;)
+  }
+})
+// =&gt; &quot;a is: 1&quot;
+</code></pre><blockquote>
+<p><strong>&#x4E0D;&#x8981;&#x5728;&#x9009;&#x9879;&#x5C5E;&#x6027;&#x6216;&#x56DE;&#x8C03;&#x4E0A;&#x4F7F;&#x7528;&#x7BAD;&#x5934;&#x51FD;&#x6570;</strong>&#xFF0C;&#x6BD4;&#x5982; created: () =&gt; console.log(this.a) &#x6216; vm.$watch(&apos;a&apos;, newValue =&gt; this.myMethod())&#x3002;&#x56E0;&#x4E3A;&#x7BAD;&#x5934;&#x51FD;&#x6570;&#x662F;&#x548C;&#x7236;&#x7EA7;&#x4E0A;&#x4E0B;&#x6587;&#x7ED1;&#x5B9A;&#x5728;&#x4E00;&#x8D77;&#x7684;&#xFF0C;this &#x4E0D;&#x4F1A;&#x662F;&#x5982;&#x4F60;&#x505A;&#x9884;&#x671F;&#x7684; Vue &#x5B9E;&#x4F8B;&#xFF0C;&#x4E14; this.a &#x6216; this.myMethod &#x4E5F;&#x4F1A;&#x662F;&#x672A;&#x5B9A;&#x4E49;&#x7684;&#x3002;</p>
+</blockquote>
+<h2 id="&#x6A21;&#x7248;&#x8BED;&#x6CD5;">&#x6A21;&#x7248;&#x8BED;&#x6CD5;</h2>
+<ul>
+<li><p>&#x4E0D;&#x652F;&#x6301;<code>v-html</code></p>
+</li>
+<li><p>&#x4E0D;&#x652F;&#x6301;&#x8FC7;&#x6EE4;&#x5668;</p>
+</li>
+<li><p>&#x6682;&#x4E0D;&#x652F;&#x6301;&#x5728;&#x7EC4;&#x4EF6;&#x4E0A;&#x4F7F;&#x7528; Class &#x4E0E; Style &#x7ED1;&#x5B9A;</p>
+</li>
+<li><p>&#x5217;&#x8868;&#x6E32;&#x67D3;&#x6CE8;&#x610F;&#x4E8B;&#x9879;</p>
+</li>
+</ul>
+<blockquote>
+<p>&#x5D4C;&#x5957;&#x5217;&#x8868;&#x6E32;&#x67D3;&#xFF0C;&#x5FC5;&#x987B;&#x6307;&#x5B9A;&#x4E0D;&#x540C;&#x7684;&#x7D22;&#x5F15;</p>
+</blockquote>
+<pre><code>&lt;!-- &#x5728;&#x8FD9;&#x79CD;&#x5D4C;&#x5957;&#x5FAA;&#x73AF;&#x7684;&#x65F6;&#x5019;&#xFF0C; index &#x548C; itemIndex &#x8FD9;&#x79CD;&#x7D22;&#x5F15;&#x662F;&#x5FC5;&#x987B;&#x6307;&#x5B9A;&#xFF0C;&#x4E14;&#x522B;&#x540D;&#x4E0D;&#x80FD;&#x60F3;&#x540C;&#xFF0C;&#x6B63;&#x786E;&#x7684;&#x5199;&#x6CD5;&#x5982;&#x4E0B; --&gt;
+&lt;template&gt;
+    &lt;ul v-for=&quot;(card, index) in list&quot;&gt;
+        &lt;li v-for=&quot;(item, itemIndex) in card&quot;&gt;
+            {{item.value}}
+        &lt;/li&gt;
+    &lt;/ul&gt;
+&lt;/template&gt;
+</code></pre><ul>
+<li>&#x8868;&#x5355;&#x63A7;&#x4EF6;&#x7ED1;&#x5B9A;<ul>
+<li>select &#x7EC4;&#x4EF6;&#x7528; picker &#x7EC4;&#x4EF6;&#x8FDB;&#x884C;&#x4EE3;&#x66FF;</li>
+<li>&#x8868;&#x5355;&#x5143;&#x7D20; radio &#x7528; radio-group &#x7EC4;&#x4EF6;&#x8FDB;&#x884C;&#x4EE3;&#x66FF;</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li>&#x7EC4;&#x4EF6;&#x4E0D;&#x652F;&#x6301;&#x5217;&#x8868;<ul>
+<li>&#x6682;&#x4E0D;&#x652F;&#x6301;&#x5728;&#x7EC4;&#x4EF6;&#x5F15;&#x7528;&#x65F6;&#xFF0C;&#x5728;&#x7EC4;&#x4EF6;&#x4E0A;&#x5B9A;&#x4E49; click &#x7B49;&#x539F;&#x751F;&#x4E8B;&#x4EF6;&#x3001;v-show&#xFF08;&#x53EF;&#x7528; v-if &#x4EE3;&#x66FF;&#xFF09;&#x548C; class style &#x7B49;&#x6837;&#x5F0F;&#x5C5E;&#x6027;(&#x4F8B;&#xFF1A;<card class="class-name"> </card> &#x6837;&#x5F0F;&#x662F;&#x4E0D;&#x4F1A;&#x751F;&#x6548;&#x7684;)&#xFF0C;&#x56E0;&#x4E3A;&#x7F16;&#x8BD1;&#x5230; wxml&#xFF0C;&#x5C0F;&#x7A0B;&#x5E8F;&#x4E0D;&#x4F1A;&#x751F;&#x6210;&#x8282;&#x70B9;&#xFF0C;&#x5EFA;&#x8BAE;&#x5199;&#x5728;&#x5185;&#x90E8;&#x9876;&#x7EA7;&#x5143;&#x7D20;&#x4E0A;&#x3002;</li>
+<li>Slot&#xFF08;scoped &#x6682;&#x65F6;&#x8FD8;&#x6CA1;&#x505A;&#x652F;&#x6301;&#xFF09;</li>
+<li>&#x52A8;&#x6001;&#x7EC4;&#x4EF6;</li>
+<li>&#x5F02;&#x6B65;&#x7EC4;&#x4EF6;</li>
+<li>inline-template</li>
+<li>X-Templates</li>
+<li>keep-alive</li>
+<li>transition</li>
+<li>class</li>
+<li>style</li>
+</ul>
+</li>
+</ul>
+<h2 id="&#x5E38;&#x89C1;&#x95EE;&#x9898;">&#x5E38;&#x89C1;&#x95EE;&#x9898;</h2>
+<ol>
+<li>&#x83B7;&#x53D6;&#x5C0F;&#x7A0B;&#x5E8F;&#x5728; page onLoad &#x65F6;&#x5019;&#x4F20;&#x9012;&#x7684; options</li>
+</ol>
+<p><code>this.$root.$mp.query</code></p>
+<ol>
+<li>&#x83B7;&#x53D6;&#x5C0F;&#x7A0B;&#x5E8F;&#x5728; app onLaunch/onShow &#x65F6;&#x5019;&#x4F20;&#x9012;&#x7684; options</li>
+</ol>
+<p><code>this.$root.$mp.appOptions</code></p>
+<ol>
+<li>&#x6355;&#x83B7; app &#x7684; onError</li>
+</ol>
+<pre><code>export default {
+   // &#x53EA;&#x6709; app &#x624D;&#x4F1A;&#x6709; onLaunch &#x7684;&#x751F;&#x547D;&#x5468;&#x671F;
+   onLaunch () {
+       // ...
+   },
+
+   // &#x6355;&#x83B7; app error
+   onError (err) {
+       console.log(err)
+   }
+}
+</code></pre><ol>
+<li>&#x5F15;&#x5165;&#x6587;&#x4EF6;&#x7684;&#x8DEF;&#x5F84;&#x95EE;&#x9898;</li>
+</ol>
+<p><code>import {post} from &apos;@/utils/requestMethod&apos;</code></p>
+<p>&#x793A;&#x4F8B;&#xFF1A;</p>
+<p><img src="https://ws3.sinaimg.cn/large/006tNc79ly1fqr0b58c14j31200va7ct.jpg" alt=""></p>
+<ol>
+<li>&#x5F15;&#x5165;css&#x6587;&#x4EF6;</li>
+</ol>
+<pre><code>&lt;!-- &#x5F15;&#x5165;&#x5916;&#x90E8;&#x6587;&#x4EF6; --&gt;
+&lt;!-- &#x5176;&#x4ED6;&#x6587;&#x4EF6;&#x5939; --&gt;
+&lt;style scoped src=&quot;@/common/css/common.css&quot;&gt;&lt;/style&gt;
+&lt;!-- &#x5F53;&#x524D;&#x6587;&#x4EF6;&#x5939; *&#x5FC5;&#x987B;&#x5199;./ --&gt;
+&lt;style scoped src=&quot;./index.css&quot;&gt;&lt;/style&gt;
+
+// &#x5355;&#x72EC;&#x914D;&#x7F6E;&#x6BCF;&#x4E2A;&#x9875;&#x9762;&#x7684;css
+&lt;style scoped&gt;
+.search-container{
+  height: 558rpx;
+  background-image: linear-gradient(0deg, #E73131 0%, #FF7B4F 100%);color:#fff;
+}
+&lt;/style&gt;
+</code></pre><ol>
+<li>&#x672C;&#x5730;&#x8D44;&#x6E90;&#x65E0;&#x6CD5;&#x901A;&#x8FC7; WXSS &#x83B7;&#x53D6;</li>
+</ol>
+<p><strong>&#x672C;&#x5730;&#x8D44;&#x6E90;&#x975E;base64&#x56FE;&#x4E0D;&#x4F1A;&#x663E;&#x793A;</strong>
+background-image&#xFF1A;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x7F51;&#x7EDC;&#x56FE;&#x7247;&#xFF0C;&#x6216;&#x8005; base64&#xFF0C;&#x6216;&#x8005;&#x4F7F;&#x7528;<image>&#x6807;&#x7B7E;</image></p>
+<ol>
+<li><p>ajax&#x5C01;&#x88C5;</p>
+</li>
+<li><p>requestMethod.js</p>
+</li>
+</ol>
+<pre><code>let serverPath = &apos;http://super.fanli.com/h5/&apos;
+
+export function post(url,body) {
+    return new Promise((resolve,reject) =&gt; {
+        wx.request({
+              url: serverPath + url,    // &#x62FC;&#x63A5;&#x5B8C;&#x6574;&#x7684;url
+              data: body,
+              method:&apos;GET&apos;,
+              header: {
+                  &apos;content-type&apos;: &apos;application/json&apos;
+              },
+              success(res) {
+                resolve(res)  // &#x628A;&#x8FD4;&#x56DE;&#x7684;&#x6570;&#x636E;&#x4F20;&#x51FA;&#x53BB;
+              },
+              fail(ret) {
+                reject(ret)   // &#x628A;&#x9519;&#x8BEF;&#x4FE1;&#x606F;&#x4F20;&#x51FA;&#x53BB;
+              }
+            })
+    })
+}
+</code></pre><ul>
+<li>main.js</li>
+</ul>
+<pre><code>import {post} from &apos;@/utils/requestMethod&apos;
+Vue.prototype.$post = post
+</code></pre><ul>
+<li>index.vue</li>
+</ul>
+<pre><code>&lt;script&gt;
+export default {
+  data () {
+    return {
+
+    }
+  },
+
+  components: {},
+
+  methods: {
+
+    fetchData () {
+      let res = this.$post(&apos;coupon/ajaxGetItem?&apos;,
+          {
+            p: 1,
+          }
+      ).then(function(res){
+        console.log(res.data.data);
+      }, function(json){
+        console.log(&apos;error&apos;);
+      })
+
+      // console.log(res)
+    }
+  },
+
+  created () {
+    this.fetchData();
+  }
+}
+&lt;/script&gt;
+</code></pre>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="微信api.html" class="navigation navigation-prev " aria-label="Previous page: 1、微信api">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="wepy.html" class="navigation navigation-next " aria-label="Next page: 3、wepy">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"2、mpvue","level":"2.2","depth":1,"next":{"title":"3、wepy","level":"2.3","depth":1,"path":"小程序/wepy.md","ref":"./小程序/wepy.md","articles":[]},"previous":{"title":"1、微信api","level":"2.1","depth":1,"path":"小程序/微信api.md","ref":"./小程序/微信api.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"小程序/mpvue.md","mtime":"2018-05-02T06:51:41.302Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-05-02T07:05:05.183Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

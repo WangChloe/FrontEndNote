@@ -1,0 +1,1122 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>2、v2 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="深入.html" />
+    
+    
+    <link rel="prev" href="v1.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        <li class="header">Vue</li>
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="v1.html">
+            
+                <a href="v1.html">
+            
+                    
+                    1、v1
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.3" data-path="v2.html">
+            
+                <a href="v2.html">
+            
+                    
+                    2、v2
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="深入.html">
+            
+                <a href="深入.html">
+            
+                    
+                    3、深入
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">小程序</li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" data-path="../小程序/微信api.html">
+            
+                <a href="../小程序/微信api.html">
+            
+                    
+                    1、微信api
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="../小程序/mpvue.html">
+            
+                <a href="../小程序/mpvue.html">
+            
+                    
+                    2、mpvue
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" data-path="../小程序/wepy.html">
+            
+                <a href="../小程序/wepy.html">
+            
+                    
+                    3、wepy
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >2、v2</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <!-- MarkdownTOC -->
+<ul>
+<li>&#x6307;&#x4EE4;<ul>
+<li>&#x6E32;&#x67D3;&#x5C42;&#x6B21;<ul>
+<li>&#x58F0;&#x660E;&#x5F0F;&#x6E32;&#x67D3;</li>
+<li>&#x6761;&#x4EF6;&#x6E32;&#x67D3;</li>
+</ul>
+</li>
+<li>&#x6240;&#x6709;&#x6307;&#x4EE4;<ul>
+<li>v-model<ul>
+<li>v-model&#x4FEE;&#x9970;&#x7B26;</li>
+</ul>
+</li>
+<li>v-bind</li>
+<li>v-if (&#x5E94;&#x7528;&#x573A;&#x666F;&#xFF1A;&#x6761;&#x4EF6;&#x4E0D;&#x5E38;&#x6539;&#x53D8;)</li>
+<li>v-show (&#x5E94;&#x7528;&#x573A;&#x666F;&#xFF1A;&#x9891;&#x7E41;&#x5207;&#x6362;)</li>
+<li>v-for</li>
+<li>v-on &#x4E8B;&#x4EF6;&#x7ED1;&#x5B9A;</li>
+</ul>
+</li>
+<li>&#x91CD;&#x8981;&#x7F29;&#x5199;</li>
+<li>&#x81EA;&#x5B9A;&#x4E49;&#x6307;&#x4EE4;<ul>
+<li>&#x81EA;&#x5B9A;&#x4E49;&#x6307;&#x5B9A;&#x4F20;&#x53C2;</li>
+<li>&#x81EA;&#x5B9A;&#x4E49;&#x6307;&#x4EE4;&#x5E94;&#x7528;&#x4E8E;&#x6807;&#x7B7E;</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>&#x8FC7;&#x6EE4;&#x5668;<ul>
+<li>&#x81EA;&#x5B9A;&#x4E49;&#x8FC7;&#x6EE4;&#x5668;</li>
+</ul>
+</li>
+<li>&#x52A8;&#x753B;</li>
+<li>&#x4E8B;&#x4EF6;<ul>
+<li>&#x4E8B;&#x4EF6;&#x4FEE;&#x9970;&#x7B26;<ul>
+<li>v-on&#x4FEE;&#x9970;&#x7B26;</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>&#x76D1;&#x542C;</li>
+<li>&#x7EC4;&#x4EF6;<ul>
+<li>&#x6CE8;&#x518C;&#x7EC4;&#x4EF6;</li>
+<li>&#x53C2;&#x6570;<ul>
+<li>props</li>
+<li>data</li>
+</ul>
+</li>
+<li>&#x7EC4;&#x4EF6;API<ul>
+<li>Vue &#x7EC4;&#x4EF6;&#x7684; API &#x6765;&#x81EA;&#x4E09;&#x90E8;&#x5206; - props, events &#x548C; slots &#xFF1A;</li>
+</ul>
+</li>
+<li>&#x7EC4;&#x4EF6;&#x901A;&#x4FE1;<ul>
+<li>props<ul>
+<li>props&#x662F;&#x5355;&#x5411;&#x7ED1;&#x5B9A;</li>
+<li>&#x5B50;&#x7EC4;&#x4EF6; -&gt; &#x7236;&#x7EC4;&#x4EF6;</li>
+</ul>
+</li>
+<li>&#x5B50;&#x7EC4;&#x4EF6;&#x7D22;&#x5F15;</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>vue&#x6784;&#x9020;&#x5668;</li>
+<li>&#x5B9E;&#x4F8B;&#x7684;&#x751F;&#x547D;&#x5468;&#x671F;</li>
+</ul>
+<!-- /MarkdownTOC -->
+<p><a href="Vue&#x624B;&#x518C;">http://v1-cn.vuejs.org/guide/</a>
+&#x517C;&#x5BB9;&#xFF1A;IE9+&#x3001;Chrome&#x3001;FF</p>
+<p><img src="http://mmbiz.qpic.cn/mmbiz_png/I4OWBs9UyBs1xEgDicXtVyUztsIn2m2H2DdQYKeiaA204fSPZ2oWnfibChiatIicicLDNfLC4K6W0IoqibcBiawsSzqfjA/640?wx_fmt=png&amp;tp=webp&amp;wxfrom=5&amp;wx_lazy=1" alt="vue&#x601D;&#x7EF4;&#x5BFC;&#x56FE;"></p>
+<h2 id="&#x6307;&#x4EE4;">&#x6307;&#x4EE4;</h2>
+<h3 id="&#x6E32;&#x67D3;&#x5C42;&#x6B21;">&#x6E32;&#x67D3;&#x5C42;&#x6B21;</h3>
+<h4 id="&#x58F0;&#x660E;&#x5F0F;&#x6E32;&#x67D3;">&#x58F0;&#x660E;&#x5F0F;&#x6E32;&#x67D3;</h4>
+<ul>
+<li>v-model &#x8868;&#x5355;value&#x503C;</li>
+</ul>
+<pre><code>&lt;!-- &#x53CC;&#x5411;&#x7ED1;&#x5B9A; --&gt;
+&lt;div id=&quot;div1&quot;&gt;{{data1}}&lt;/div&gt;
+&lt;div class=&quot;div1&quot;&gt;{{data2}}  {{data3}}&lt;/div&gt;
+&lt;div class=&quot;div1&quot;&gt;{{data2}}&lt;/div&gt;
+&lt;div id=&quot;div2&quot;&gt;
+    &lt;input type=&quot;text&quot; v-model=&quot;msg&quot;/&gt;
+    &lt;p&gt;{{msg}}&lt;/p&gt;
+&lt;/div&gt;
+
+- vm.msg
+
+#### &#x5217;&#x8868;&#x6E32;&#x67D3;(&#x5FAA;&#x73AF;)
+
+- v-for
+
+&lt;!-- for&#x5FAA;&#x73AF; --&gt;
+&lt;div id=&quot;div3&quot;&gt;
+    &lt;a href=&quot;javascript:;&quot; v-for=&quot;val in arr&quot;&gt;{{val}}  {{$index}}&lt;/a&gt;
+    &lt;ul&gt;
+        &lt;li v-for=&quot;{key,value} in jsonD&quot;&gt;{{value}}&lt;/li&gt;
+    &lt;/ul&gt;
+&lt;/div&gt;
+&lt;script&gt;
+    new Vue({
+        el: &apos;#div1&apos;,
+        data: {
+            data1: &apos;wsfssagadsww&apos;
+        }
+    });
+
+    new Vue({
+        el: &apos;.div1&apos;,    // &#x9009;&#x62E9;&#x591A;&#x4E2A;&#x5143;&#x7D20;&#x65F6;&#x53EA;&#x5BF9;&#x7B2C;&#x4E00;&#x4E2A;&#x6709;&#x6548;
+        data: {
+            data2: &apos;rywrsgvcbxff&apos;,
+            data3: &apos;agbfagdahvceyuj&apos;
+        }
+    });
+
+    new Vue({
+        el: &apos;#div2&apos;,
+        data: {
+            msg: &apos;&#x53CC;&#x5411;&#x7ED1;&#x5B9A;&apos;
+        }
+    });
+
+    new Vue({
+        el: &apos;#div3&apos;,
+        data: {
+            arr: [132, 142124 , &apos;zfaf&apos;, 523],
+            jsonD: {a: &apos;das&apos;, b:&apos;fafa&apos;, c:&apos;agds&apos;}
+        }
+    });
+&lt;/script&gt;
+</code></pre><h4 id="&#x6761;&#x4EF6;&#x6E32;&#x67D3;">&#x6761;&#x4EF6;&#x6E32;&#x67D3;</h4>
+<pre><code>&lt;!-- v-bind v-show v-if v-else &#x8FC7;&#x6EE4;&#x5668; --&gt;
+&lt;div id=&quot;div1&quot;&gt;
+    &lt;div v-bind:class=&quot;{red:a,blue:b,&apos;green&apos;:g}&quot;&gt;&lt;/div&gt;
+    &lt;div class=&quot;red&quot; v-bind:style=&quot;{width:w}&quot;&gt;&lt;/div&gt;
+    &lt;p v-show=&quot;false&quot;&gt;1212&lt;/p&gt;    &lt;!-- display:none/block; &#x4FDD;&#x7559;DOM --&gt;
+    &lt;input type=&quot;checkbox&quot; v-model=&quot;c&quot; /&gt;
+    &lt;p v-if=&quot;c&quot;&gt;1212&lt;/p&gt;    &lt;!-- c&#x4E3A;&#x5047;&#xFF0C;&#x8D70;else&#xFF0C;if&#x6574;&#x4E2A;DOM&#x5220;&#x9664; &#x4E0D;&#x4FDD;&#x7559;DOM --&gt;
+    &lt;p v-else=&quot;c&quot;&gt;333333&lt;/p&gt;
+    {{m | currency &apos;&#xFFE5;&apos; 2}}
+&lt;/div&gt;
+&lt;script&gt;
+    new Vue({
+        el: &apos;#div1&apos;,
+        data: {
+            msg: &apos;hi Vue&apos;,
+            a: true,
+            b: false,
+            c: &apos;&apos;,
+            m: 1000
+        },
+
+    });
+&lt;/script&gt;
+</code></pre><h3 id="&#x6240;&#x6709;&#x6307;&#x4EE4;">&#x6240;&#x6709;&#x6307;&#x4EE4;</h3>
+<h4 id="v-model">v-model</h4>
+<p>&#x8868;&#x5355;value&#x503C;</p>
+<input type="radio" v-model="pick" v-bind:value="a">
+
+<blockquote>
+<p>&#x5168;&#x5C40;model&#x5BF9;&#x8C61;vm
+vm.pick === vm.a</p>
+</blockquote>
+<h5 id="v-model&#x4FEE;&#x9970;&#x7B26;">v-model&#x4FEE;&#x9970;&#x7B26;</h5>
+<ul>
+<li>.lazy</li>
+</ul>
+<p>&#x5728; &quot;change&quot; &#x800C;&#x4E0D;&#x662F; &quot;input&quot; &#x4E8B;&#x4EF6;&#x4E2D;&#x66F4;&#x65B0;&#xFF0C;&#x53EA;&#x6709;&#x5728;input&#x8F93;&#x5165;&#x6846;&#x53D1;&#x751F;&#x4E00;&#x4E2A;blur&#x65F6;&#x624D;&#x89E6;&#x53D1;</p>
+<input v-model.lazy="msg">
+
+<ul>
+<li>.number</li>
+</ul>
+<p>&#x81EA;&#x52A8;&#x5C06;&#x7528;&#x6237;&#x7684;&#x8F93;&#x5165;&#x503C;&#x8F6C;&#x4E3A; Number &#x7C7B;&#x578B;</p>
+<input v-model.number="age" type="number">
+
+<ul>
+<li>.trim</li>
+</ul>
+<p>&#x81EA;&#x52A8;&#x8FC7;&#x6EE4;&#x7528;&#x6237;&#x8F93;&#x5165;&#x7684;&#x9996;&#x5C3E;&#x7A7A;&#x683C;</p>
+<input v-model.trim="msg">
+
+<h4 id="v-bind">v-bind</h4>
+<ol>
+<li><p>&#x5BF9;&#x8C61;</p>
+</li>
+<li><p>&#x6570;&#x7EC4;</p>
+</li>
+</ol>
+<h4 id="v-if-&#x5E94;&#x7528;&#x573A;&#x666F;&#xFF1A;&#x6761;&#x4EF6;&#x4E0D;&#x5E38;&#x6539;&#x53D8;">v-if (&#x5E94;&#x7528;&#x573A;&#x666F;&#xFF1A;&#x6761;&#x4EF6;&#x4E0D;&#x5E38;&#x6539;&#x53D8;)</h4>
+<p>v-if / v-else / v-else-if</p>
+<p>&#x652F;&#x6301;<template>&#x8BED;&#x6CD5;</template></p>
+<p>&#x82E5;v-if&#x4E3A;false&#xFF0C;&#x5220;&#x9664;&#x6574;&#x4E2A;DOM</p>
+<blockquote>
+<p>v-for&amp;v-if&#x540C;&#x65F6;&#x4F7F;&#x7528;&#xFF0C;v-for&#x4F18;&#x5148;&#x7EA7;&#x66F4;&#x9AD8;</p>
+</blockquote>
+<h4 id="v-show-&#x5E94;&#x7528;&#x573A;&#x666F;&#xFF1A;&#x9891;&#x7E41;&#x5207;&#x6362;">v-show (&#x5E94;&#x7528;&#x573A;&#x666F;&#xFF1A;&#x9891;&#x7E41;&#x5207;&#x6362;)</h4>
+<p>display:none/block;</p>
+<p>&#x4E0D;&#x652F;&#x6301;<template>&#x8BED;&#x6CD5;</template></p>
+<p>&#x82E5;v-show&#x4E3A;false&#xFF0C;&#x4FDD;&#x7559;DOM&#xFF0C;&#x4EC5;&#x9690;&#x85CF;&#x5143;&#x7D20;</p>
+<h4 id="v-for">v-for</h4>
+<p>&#x652F;&#x6301;<template>&#x8BED;&#x6CD5;</template></p>
+<p>&#x56DB;&#x79CD;&#x5F62;&#x5F0F;</p>
+<p>(1) arr&#x4E3A;&#x6570;&#x7EC4;&#xFF0C;val&#x4E3A;&#x6570;&#x7EC4;&#x5143;&#x7D20;&#xFF0C;$index&#x4E3A;&#x7D22;&#x5F15;
+<a href="javascript:;" v-for="val in arr" target="_blank">  </a></p>
+<p>(2) arr&#x4E3A;&#x6570;&#xFF0C;item&#x4E3A;&#x6570;&#x7EC4;&#x5143;&#x7D20;&#xFF0C;index&#x4E3A;&#x7D22;&#x5F15;</p>
+<li v-for="(item, index) in arr"> </li>
+
+<p>(3) jsonD&#x4E3A;json&#x5BF9;&#x8C61;&#xFF0C;key&#x4E3A;&#x952E;&#x540D;&#xFF0C;value&#x4E3A;&#x952E;&#x503C;</p>
+<li v-for="{value, key} in jsonD"></li>
+
+<p>(4) &#x6307;&#x5B9A;&#x8FED;&#x4EE3;10&#x6B21;
+ <span v-for="n in 10"> </span></p>
+<blockquote>
+<p>&#x7EC4;&#x4EF6;&#x4F7F;&#x7528;v-for&#xFF0C;key&#x5FC5;&#x987B;&#x586B;&#x5199;</p>
+</blockquote>
+<pre><code>&lt;my-component
+  v-for=&quot;(item, index) in items&quot;
+  v-bind:item=&quot;item&quot;
+  v-bind:index=&quot;index&quot;
+  v-bind:key=&quot;item.id&quot;&gt;
+&lt;/my-component&gt;
+</code></pre><h4 id="v-on-&#x4E8B;&#x4EF6;&#x7ED1;&#x5B9A;">v-on &#x4E8B;&#x4EF6;&#x7ED1;&#x5B9A;</h4>
+<h3 id="&#x91CD;&#x8981;&#x7F29;&#x5199;">&#x91CD;&#x8981;&#x7F29;&#x5199;</h3>
+<ul>
+<li><p><code>v-bind:href=&quot;url&quot;</code> -&gt; <code>:href=&quot;url&quot;</code></p>
+</li>
+<li><p><code>v-on:click=&quot;fn&quot;</code> -&gt; <code>@click=&quot;fn&quot;</code></p>
+</li>
+</ul>
+<h3 id="&#x81EA;&#x5B9A;&#x4E49;&#x6307;&#x4EE4;">&#x81EA;&#x5B9A;&#x4E49;&#x6307;&#x4EE4;</h3>
+<ul>
+<li>bind &#x6307;&#x4EE4;&#x7B2C;&#x4E00;&#x6B21;&#x7ED1;&#x5B9A;&#x5230;&#x5143;&#x7D20;&#x65F6;&#x8C03;&#x7528;&#xFF0C;&#x9002;&#x7528;&#x4E8E;&#x521D;&#x59CB;&#x5316;</li>
+<li>inserted &#x88AB;&#x7ED1;&#x5B9A;&#x5143;&#x7D20;&#x63D2;&#x5165;&#x7236;&#x8282;&#x70B9;&#x65F6;&#x8C03;&#x7528;</li>
+<li>update &#x6240;&#x5728;&#x7EC4;&#x4EF6;&#x7684;Vnode&#x66F4;&#x65B0;&#x524D;&#x6216;&#x66F4;&#x65B0;&#x65F6;&#x8C03;&#x7528;</li>
+<li>comonentUpdated &#x6240;&#x5728;&#x7EC4;&#x4EF6;&#x7684;vnode&#x548C;&#x4ED6;&#x7684;&#x5B50;nvnode&#x5168;&#x90E8;&#x66F4;&#x65B0;&#x5B8C;&#x8C03;&#x7528;</li>
+<li>unbind &#x6307;&#x4EE4;&#x4E0E;&#x5143;&#x7D20;&#x89E3;&#x7ED1;&#x65F6;&#x8C03;&#x7528;</li>
+</ul>
+<pre><code>&lt;div v-red id=&quot;div1&quot;&gt;
+    &#x80CC;&#x666F;&#x989C;&#x8272;&#x53D8;&#x4E86;
+&lt;/div&gt;
+&lt;script&gt;
+    Vue.directive(&apos;red&apos;, function() {
+        this.el.style.backgroundColor = &apos;red&apos;;
+    });
+    new Vue({
+        el: &apos;#div1&apos;
+    });
+&lt;/script&gt;
+</code></pre><h4 id="&#x81EA;&#x5B9A;&#x4E49;&#x6307;&#x5B9A;&#x4F20;&#x53C2;">&#x81EA;&#x5B9A;&#x4E49;&#x6307;&#x5B9A;&#x4F20;&#x53C2;</h4>
+<pre><code>&lt;div v-red=&quot;&apos;&lt;h1&gt;&#x5B57;&#x4E5F;&#x53D8;&#x4E86;&lt;/h1&gt;&apos;&quot; id=&quot;div1&quot;&gt; &lt;!-- &#x6CE8;&#x610F;&#x6307;&#x4EE4;&#x8D4B;&#x503C;&#x662F;&#x5B57;&#x7B26;&#x4E32; --&gt;
+    &#x80CC;&#x666F;&#x989C;&#x8272;&#x53D8;&#x4E86;
+&lt;/div&gt;
+&lt;script&gt;
+    Vue.directive(&apos;red&apos;, function(value) {
+        this.el.style.backgroundColor = &apos;red&apos;;
+        this.el.innerHTML = value;
+    });
+    new Vue({
+        el: &apos;#div1&apos;
+    });
+&lt;/script&gt;
+</code></pre><h4 id="&#x81EA;&#x5B9A;&#x4E49;&#x6307;&#x4EE4;&#x5E94;&#x7528;&#x4E8E;&#x6807;&#x7B7E;">&#x81EA;&#x5B9A;&#x4E49;&#x6307;&#x4EE4;&#x5E94;&#x7528;&#x4E8E;&#x6807;&#x7B7E;</h4>
+<p><strong>&#x4E0D;&#x5EFA;&#x8BAE;&#x4F7F;&#x7528;</strong></p>
+<pre><code>&lt;div id=&quot;div1&quot;&gt;
+    &#x80CC;&#x666F;&#x989C;&#x8272;&#x6CA1;&#x53D8;
+    &lt;v-red&gt;&#x80CC;&#x666F;&#x989C;&#x8272;&#x53D8;&#x4E86;&lt;/v-red&gt; &lt;!-- &#x73B0;&#x5728;&#x4E0D;&#x662F;&#x5757;&#x5143;&#x7D20;&#x4E86; --&gt;
+&lt;/div&gt;
+&lt;script&gt;
+    Vue.elementDirective(&apos;v-red&apos;,{
+        bind:function(){
+            this.el.style.backgroundColor=&apos;red&apos;;
+        }
+    });
+    new Vue({
+        el:&apos;#div1&apos;,
+    });
+&lt;/script&gt;
+</code></pre><h2 id="&#x8FC7;&#x6EE4;&#x5668;">&#x8FC7;&#x6EE4;&#x5668;</h2>
+<h3 id="&#x81EA;&#x5B9A;&#x4E49;&#x8FC7;&#x6EE4;&#x5668;">&#x81EA;&#x5B9A;&#x4E49;&#x8FC7;&#x6EE4;&#x5668;</h3>
+<blockquote>
+<p>&#x53EA;&#x652F;&#x6301;v-bind / &#x53CC;&#x62EC;&#x53F7;</p>
+</blockquote>
+<pre><code>&lt;div id=&quot;div1&quot;&gt;
+    {{msg|reverse}}
+    {{msg|reverse2 &apos;a1&apos; &apos;b1&apos;}}
+&lt;/div&gt;
+&lt;script&gt;
+    Vue.filter(&apos;reverse&apos;, function(input) {
+        return input.split(&apos; &apos;).reverse().join(&apos; &apos;);
+    });
+
+    Vue.filter(&apos;reverse2&apos;, function(input, a, b) {
+        return input.split(&apos; &apos;).reverse().join(&apos; &apos;) + a + b;
+    });
+
+    new Vue({
+        el: &apos;#div1&apos;,
+        data: {
+            msg: &apos;hello vue world&apos;
+        },
+    });
+&lt;/script&gt;
+</code></pre><pre><code>&lt;script&gt;
+    new Vue({
+      filters: {
+        capitalize: function (value) {
+          if (!value) return &apos;&apos;
+          value = value.toString()
+          return value.charAt(0).toUpperCase() + value.slice(1)
+        },
+        f2: function(value){
+
+        }
+      }
+    })
+&lt;/script&gt;
+</code></pre><h2 id="&#x52A8;&#x753B;">&#x52A8;&#x753B;</h2>
+<ul>
+<li>&#x5B9A;&#x4E49;&#x52A8;&#x753B;</li>
+</ul>
+<pre><code>&lt;style&gt;
+    .&#x52A8;&#x753B;&#x540D;&#x79F0;-transition {
+
+    }
+    .&#x52A8;&#x753B;&#x540D;&#x79F0;-enter {
+
+    }
+    .&#x52A8;&#x753B;&#x540D;&#x79F0;-leave {
+
+    }
+&lt;/style&gt;
+</code></pre><ul>
+<li>&#x4F7F;&#x7528;&#x52A8;&#x753B;</li>
+</ul>
+<pre><code>&lt;div transition=&quot;&#x52A8;&#x753B;&#x540D;&#x79F0;&quot;&gt;&lt;/div&gt;
+</code></pre><h2 id="&#x4E8B;&#x4EF6;">&#x4E8B;&#x4EF6;</h2>
+<p>v-on&#x4E24;&#x79CD;&#x65B9;&#x5F0F;&#x6DFB;&#x52A0;&#x4E8B;&#x4EF6;</p>
+<ol>
+<li><p>v-on:click = &quot;add()&quot;</p>
+</li>
+<li><p>@click = &quot;add()&quot;</p>
+</li>
+</ol>
+<blockquote>
+<p><strong>&#x4E0D;&#x4F20;&#x53C2;&#x53EF;&#x4EE5;&#x4E0D;&#x52A0;&#x62EC;&#x53F7;</strong></p>
+</blockquote>
+<pre><code>&lt;div id=&quot;div1&quot;&gt;
+    &lt;input type=&quot;text&quot; placeholder=&quot;&#x8BF7;&#x8F93;&#x5165;&#x4E1C;&#x897F;&quot; v-model=&quot;msg&quot; @keyup.13=&quot;add&quot; /&gt;
+    &lt;input type=&quot;button&quot; value=&quot;&#x6DFB;&#x52A0;&quot; @click=&quot;add&quot; /&gt;
+    &lt;ul&gt;
+        &lt;li v-for=&quot;val in mdata&quot;&gt;
+            {{val}}
+            &lt;a href=&quot;javascript:;&quot; @click=&quot;del($index)&quot;&gt;&#x5220;&#x9664;&lt;/a&gt;
+        &lt;/li&gt;
+    &lt;/ul&gt;
+&lt;/div&gt;
+&lt;script&gt;
+    new Vue({
+        el: &apos;#div1&apos;,
+        data: {
+            msg: &apos;&apos;,
+            mdata: []
+        },
+        methods: {
+            add: function() {
+                if(this.msg == &apos;&apos;) {
+                    alert(&apos;&#x4E0D;&#x80FD;&#x4E3A;&#x7A7A;&apos;);
+                    return;
+                }
+                this.mdata.unshift(this.msg);
+                this.msg = &apos;&apos;;
+            },
+            del: function(index) {
+                this.mdata.splice(index, 1);
+            }
+        }
+    });
+&lt;/script&gt;
+</code></pre><h3 id="&#x4E8B;&#x4EF6;&#x4FEE;&#x9970;&#x7B26;">&#x4E8B;&#x4EF6;&#x4FEE;&#x9970;&#x7B26;</h3>
+<p>.stop</p>
+<p>.prevent</p>
+<p>.capture</p>
+<p>.self</p>
+<p>.once</p>
+<ol>
+<li>&#x963B;&#x6B62;&#x5192;&#x6CE1;&#xFF1A;</li>
+<li>ev.propageation()</li>
+<li><p>@click.stop = &quot;show()&quot;</p>
+</li>
+<li><p>&#x963B;&#x6B62;&#x9ED8;&#x8BA4;&#xFF1A;</p>
+</li>
+<li>ev.preventDefault()</li>
+<li><p>@contextmenu.prevent = &quot;show()&quot;</p>
+</li>
+<li><p>&#x963B;&#x6B62;&#x5192;&#x6CE1;&#x3001;&#xFF0C;&#x9ED8;&#x8BA4;</p>
+</li>
+<li><p>@contextmenu.stop.prevent = &quot;show()&quot;</p>
+</li>
+<li><p>&#x952E;&#x7801;&#x4E8B;&#x4EF6;</p>
+</li>
+<li>@keyup.&#x952E;&#x7801; = &quot;show($event)&quot;</li>
+</ol>
+<p>&#x6216;&#x8005;</p>
+<ul>
+<li>@keyup.ctrl.enter = &quot;show($event)&quot;</li>
+<li><p>@keyup.left = &quot;show($event)&quot;</p>
+</li>
+<li><p>&#x4E8B;&#x4EF6;&#x6355;&#x83B7;</p>
+</li>
+<li><p>@click.capture = &quot;show()&quot;</p>
+</li>
+<li><p>&#x4E8B;&#x4EF6;&#x5728;&#x5143;&#x7D20;&#x672C;&#x8EAB;(&#x4E0D;&#x5305;&#x542B;&#x5B50;&#x5143;&#x7D20;)&#x65F6;&#x89E6;&#x53D1;</p>
+</li>
+<li><p>@click.self = &quot;show()&quot;</p>
+</li>
+<li><p>&#x963B;&#x6B62;&#x6240;&#x6709;&#x70B9;&#x51FB;</p>
+</li>
+<li><p>@click.prevent.self = &quot;show()&quot;</p>
+</li>
+<li><p>&#x963B;&#x6B62;&#x5143;&#x7D20;&#x4E0A;&#x7684;&#x70B9;&#x51FB;</p>
+</li>
+<li><p>@click.self.prevent = &quot;show()&quot;</p>
+</li>
+<li><p>&#x4E8B;&#x4EF6;&#x53EA;&#x89E6;&#x53D1;&#x4E00;&#x6B21;</p>
+</li>
+<li>@click.once = &quot;show()&quot;</li>
+</ul>
+<h4 id="v-on&#x4FEE;&#x9970;&#x7B26;">v-on&#x4FEE;&#x9970;&#x7B26;</h4>
+<ul>
+<li>.native</li>
+</ul>
+<p>&#x76D1;&#x542C;&#x539F;&#x751F;&#x4E8B;&#x4EF6;</p>
+<p><my-component v-on:click.native="doTheThing">&lt;/my-component&gt;</my-component></p>
+<h2 id="&#x76D1;&#x542C;">&#x76D1;&#x542C;</h2>
+<p>var v = new Vue(...);</p>
+<ul>
+<li><p>v.$watch(&#x76D1;&#x542C;&#x5BF9;&#x8C61;, function() {});</p>
+</li>
+<li><p>v.$watch(&#x76D1;&#x542C;&#x5BF9;&#x8C61;, function() {}, {deep:true});   // &#x6DF1;&#x5EA6;&#x76D1;&#x542C;</p>
+</li>
+</ul>
+<h2 id="&#x7EC4;&#x4EF6;">&#x7EC4;&#x4EF6;</h2>
+<h3 id="&#x6CE8;&#x518C;&#x7EC4;&#x4EF6;">&#x6CE8;&#x518C;&#x7EC4;&#x4EF6;</h3>
+<ul>
+<li>&#x5168;&#x5C40;&#x7EC4;&#x4EF6; <code>Vue.component(tagName, options)</code></li>
+</ul>
+<p>Vue.component(&apos;xxx&apos;, {</p>
+<p>})</p>
+<blockquote>
+<p><strong>&#x5168;&#x5C40;&#x7EC4;&#x4EF6;&#x9700;&#x5728;&#x521D;&#x59CB;&#x5316;&#x6839;&#x5B9E;&#x4F8B;&#x4E4B;&#x524D;&#x6CE8;&#x518C;</strong></p>
+</blockquote>
+<pre><code>&lt;script&gt;
+// &#x6CE8;&#x518C;
+Vue.component(&apos;my-component&apos;, {
+  template: &apos;&lt;div&gt;A custom component!&lt;/div&gt;&apos;
+})
+
+// &#x521B;&#x5EFA;&#x6839;&#x5B9E;&#x4F8B;
+new Vue({
+  el: &apos;#example&apos;
+})
+&lt;/script&gt;
+</code></pre><ul>
+<li>&#x5C40;&#x90E8;&#x7EC4;&#x4EF6;</li>
+</ul>
+<pre><code>&lt;script&gt;
+var Child = {
+  template: &apos;&lt;div&gt;A custom component!&lt;/div&gt;&apos;
+}
+new Vue({
+  // ...
+  components: {
+    // &lt;my-component&gt; &#x5C06;&#x53EA;&#x5728;&#x7236;&#x6A21;&#x677F;&#x53EF;&#x7528;
+    &apos;my-component&apos;: Child
+  }
+})
+&lt;/script&gt;
+</code></pre><h3 id="&#x53C2;&#x6570;">&#x53C2;&#x6570;</h3>
+<h4 id="props">props</h4>
+<pre><code>&lt;div id=&quot;app&quot;&gt;
+    &lt;ol&gt;
+        &lt;todo-item v-for=&quot;item in items&quot; v-bind:todo=&quot;item&quot; v-bind:key=&quot;item.id&quot;&gt;&lt;/todo-item&gt;
+    &lt;/ol&gt;
+&lt;/div&gt;
+</code></pre><pre><code>&lt;script&gt;
+// &#x5C06;&#x6570;&#x636E;&#x4ECE;&#x7236;&#x4F5C;&#x7528;&#x57DF;&#x4F20;&#x5230;&#x5B50;&#x7EC4;&#x4EF6;
+Vue.component(&apos;todo-item&apos;, {
+    props: [&apos;todo&apos;],
+    template: &apos;&lt;li&gt;{{todo.text}}&lt;/li&gt;&apos;
+})
+
+var app = new Vue({
+    el: &apos;#app&apos;,
+    data: {
+        items: [
+            {id:0, text: &apos;aaa&apos;},
+            {id:1, text: &apos;bbb&apos;},
+            {id:2, text: &apos;ccc&apos;}
+        ]
+    }
+})
+&lt;/script&gt;
+</code></pre><p><strong>&#x6CE8;&#x610F;&#xFF1A;&#x7EC4;&#x4EF6;props&#x547D;&#x540D;&#x65F6;&#x9700;&#x6539;&#x4E3A;&#x9A7C;&#x5CF0;</strong></p>
+<pre><code>&lt;div id=&quot;box&quot;&gt;
+    &lt;aa msg=&quot;this is msg&quot; img-src=&quot;xx.jpg&quot;&gt;&lt;/aa&gt;
+&lt;/div&gt;
+&lt;script&gt;
+    Vue.component(&apos;aa&apos;, {
+        props: [&apos;msg&apos;, &apos;imgSrc&apos;],   // &#x63A5;&#x6536;&#x53C2;&#x6570;&#xFF0C;**&#x884C;&#x95F4;&#x547D;&#x540D;&#x6539;&#x4E3A;&#x9A7C;&#x5CF0;**
+        template: &apos;&lt;div&gt;{{msg}} &lt;img :src=&quot;imgSrc&quot;&gt;&lt;/div&gt;&apos;
+    });
+
+    new Vue({
+        el:&apos;#box&apos;,
+    });
+&lt;/script&gt;
+</code></pre><p>&#x4F20;&#x9012;&#x5B9E;&#x9645;&#x7684;&#x503C;&#x7C7B;&#x578B;&#x65F6;&#x9700;&#x4F7F;&#x7528;v-bind</p>
+<!-- 传递了一个字符串 "1" -->
+<comp some-prop="1"></comp>
+
+<!-- 传递实际的 number -->
+<comp :some-prop="1"></comp>
+
+
+<h4 id="data">data</h4>
+<blockquote>
+<p>&#x7EC4;&#x4EF6;&#x4E2D;&#x7684;data&#x5FC5;&#x987B;&#x662F;&#x4E2A;<strong>&#x51FD;&#x6570;</strong>&#xFF0C;&#x5E76;&#x4E14;&#x6709;&#x8FD4;&#x56DE;&#x503C;</p>
+</blockquote>
+<pre><code>&lt;script&gt;
+Vue.component(&apos;simple-counter&apos;, {
+  template: &apos;&lt;button v-on:click=&quot;counter += 1&quot;&gt;{{ counter }}&lt;/button&gt;&apos;,
+  data: function () {  //&#x6BCF;&#x6B21;&#x8C03;&#x7528;&#x8BE5;&#x7EC4;&#x4EF6;&#x8FD4;&#x56DE;&#x4E00;&#x4E2A;&#x5168;&#x65B0;&#x7684;data&#x5BF9;&#x8C61;
+    return {
+        counter: 0
+    }
+  }
+})
+
+new Vue({
+  el: &apos;#example-2&apos;
+})
+&lt;/script&gt;
+</code></pre><h3 id="&#x7EC4;&#x4EF6;api">&#x7EC4;&#x4EF6;API</h3>
+<ul>
+<li>Vue.extend(options); &#x521B;&#x5EFA;&#x6784;&#x9020;&#x5668;</li>
+<li>Vue.set(target, key, value); &#x8BBE;&#x7F6E;&#x5BF9;&#x8C61;&#x7684;&#x5C5E;&#x6027;</li>
+<li>Vue.directive(id, [definition]);  &#x6CE8;&#x518C;&#x6216;&#x83B7;&#x53D6;&#x5168;&#x5C40;&#x6307;&#x4EE4;</li>
+<li>Vue.filter(id, [definition]);  &#x6CE8;&#x518C;&#x6216;&#x83B7;&#x53D6;&#x5168;&#x5C40;&#x8FC7;&#x6EE4;&#x5668;</li>
+<li>Vue.componet(id, [definition]);  &#x6CE8;&#x518C;&#x6216;&#x83B7;&#x53D6;&#x5168;&#x5C40;&#x7EC4;&#x4EF6;&#xFF0C;&#x6CE8;&#x518C;&#x8FD8;&#x4F1A;&#x81EA;&#x52A8;&#x4F7F;&#x7528;&#x7ED9;&#x5B9A;&#x7684;id&#x8BBE;&#x7F6E;&#x7EC4;&#x4EF6;&#x7684;&#x540D;&#x79F0;</li>
+</ul>
+<h4 id="vue-&#x7EC4;&#x4EF6;&#x7684;-api-&#x6765;&#x81EA;&#x4E09;&#x90E8;&#x5206;---props-events-&#x548C;-slots-&#xFF1A;">Vue &#x7EC4;&#x4EF6;&#x7684; API &#x6765;&#x81EA;&#x4E09;&#x90E8;&#x5206; - props, events &#x548C; slots &#xFF1A;</h4>
+<ul>
+<li><p>Props &#x5141;&#x8BB8;&#x5916;&#x90E8;&#x73AF;&#x5883;&#x4F20;&#x9012;&#x6570;&#x636E;&#x7ED9;&#x7EC4;&#x4EF6;</p>
+</li>
+<li><p>Events &#x5141;&#x8BB8;&#x4ECE;&#x5916;&#x90E8;&#x73AF;&#x5883;&#x5728;&#x7EC4;&#x4EF6;&#x5185;&#x89E6;&#x53D1;&#x526F;&#x4F5C;&#x7528;</p>
+</li>
+<li><p>Slots &#x5141;&#x8BB8;&#x5916;&#x90E8;&#x73AF;&#x5883;&#x5C06;&#x989D;&#x5916;&#x7684;&#x5185;&#x5BB9;&#x7EC4;&#x5408;&#x5728;&#x7EC4;&#x4EF6;&#x4E2D;</p>
+</li>
+</ul>
+<h3 id="&#x7EC4;&#x4EF6;&#x901A;&#x4FE1;">&#x7EC4;&#x4EF6;&#x901A;&#x4FE1;</h3>
+<p><img src="https://cn.vuejs.org/images/props-events.png" alt="&#x7EC4;&#x4EF6;&#x901A;&#x4FE1;"></p>
+<p>&#x7236;&#x7EC4;&#x4EF6; -&gt; pass/props -&gt; &#x5B50;&#x7EC4;&#x4EF6;</p>
+<p>&#x5B50;&#x7EC4;&#x4EF6; -&gt; emit/events -&gt; &#x7236;&#x7EC4;&#x4EF6;</p>
+<h4 id="props">props</h4>
+<pre><code>&lt;div id=&quot;app&quot;&gt;
+    &lt;ol&gt;
+        &lt;todo-item v-for=&quot;item in items&quot; :todo=&quot;item&quot; :key=&quot;item.id&quot;&gt;&lt;/todo-item&gt;
+    &lt;/ol&gt;
+&lt;/div&gt;
+</code></pre><pre><code>&lt;script&gt;
+// &#x5C06;&#x6570;&#x636E;&#x4ECE;&#x7236;&#x4F5C;&#x7528;&#x57DF;&#x4F20;&#x5230;&#x5B50;&#x7EC4;&#x4EF6;
+Vue.component(&apos;todo-item&apos;, {
+    props: [&apos;todo&apos;],
+    template: &apos;&lt;li&gt;{{todo.text}}&lt;/li&gt;&apos;
+})
+
+var app = new Vue({
+    el: &apos;#app&apos;,
+    data: {
+        items: [
+            {id:0, text: &apos;aaa&apos;},
+            {id:1, text: &apos;bbb&apos;},
+            {id:2, text: &apos;ccc&apos;}
+        ]
+    }
+})
+&lt;/script&gt;
+</code></pre><h5 id="props&#x662F;&#x5355;&#x5411;&#x7ED1;&#x5B9A;">props&#x662F;&#x5355;&#x5411;&#x7ED1;&#x5B9A;</h5>
+<p>&#x7236;&#x7EC4;&#x4EF6; -&gt; &#x5B50;&#x7EC4;&#x4EF6;
+&#x5B50;&#x7EC4;&#x4EF6; X  &#x7236;&#x7EC4;&#x4EF6;</p>
+<blockquote>
+<p>&#x60F3;&#x8981;&#x4FEE;&#x6539;props&#x7684;&#x503C;&#x65F6;&#x53EF;&#x505A;&#x4EE5;&#x4E0B;&#x5904;&#x7406;&#xFF0C;&#x4F46;&#x8FD9;&#x79CD;&#x65B9;&#x6CD5;&#x4ECD;&#x6539;&#x53D8;&#x4E0D;&#x4E86;&#x7236;&#x7EC4;&#x4EF6;&#x7684;&#x503C;
+&#x5982;&#x679C; props &#x662F;&#x4E00;&#x4E2A;&#x5BF9;&#x8C61;&#x6216;&#x6570;&#x7EC4;&#xFF0C;&#x5219;&#x4E3A;&#x5F15;&#x7528;&#x7C7B;&#x578B;&#xFF0C;&#x5728;&#x5B50;&#x7EC4;&#x4EF6;&#x5185;&#x90E8;&#x6539;&#x53D8;&#x5B83;&#x4F1A;&#x5F71;&#x54CD;&#x7236;&#x7EC4;&#x4EF6;&#x7684;&#x72B6;&#x6001;&#x3002;</p>
+</blockquote>
+<ul>
+<li>&#x5B9A;&#x4E49;&#x4E3A;&#x5C40;&#x90E8;&#x53D8;&#x91CF;</li>
+</ul>
+<pre><code>&lt;script&gt;
+    props: [&apos;initialCounter&apos;],
+    data: function () {
+      return { counter: this.initialCounter }
+    }
+&lt;/script&gt;
+</code></pre><ul>
+<li>&#x5B9A;&#x4E49;&#x4E3A;&#x8BA1;&#x7B97;&#x5C5E;&#x6027;</li>
+</ul>
+<pre><code>&lt;script&gt;
+    props: [&apos;size&apos;],
+    computed: {
+      normalizedSize: function () {
+        return this.size.trim().toLowerCase()
+      }
+    }
+&lt;/script&gt;
+</code></pre><h5 id="&#x5B50;&#x7EC4;&#x4EF6;---&#x7236;&#x7EC4;&#x4EF6;">&#x5B50;&#x7EC4;&#x4EF6; -&gt; &#x7236;&#x7EC4;&#x4EF6;</h5>
+<ul>
+<li><p>&#x4F7F;&#x7528; $on(eventName) &#x76D1;&#x542C;&#x4E8B;&#x4EF6;</p>
+</li>
+<li><p>&#x4F7F;&#x7528; $emit(eventName) &#x89E6;&#x53D1;&#x4E8B;&#x4EF6;</p>
+</li>
+</ul>
+<p><code>v-on:&#x5B50;&#x7EC4;&#x4EF6;&#x4E8B;&#x4EF6;=&quot;&#x7236;&#x7EC4;&#x4EF6;&#x4E8B;&#x4EF6;&quot;</code></p>
+<pre><code>&lt;div id=&quot;counter-event-example&quot;&gt;
+  &lt;p&gt;{{ total }}&lt;/p&gt;
+  &lt;button-counter v-on:increment=&quot;incrementTotal&quot;&gt;&lt;/button-counter&gt;
+  &lt;button-counter v-on:increment=&quot;incrementTotal&quot;&gt;&lt;/button-counter&gt;
+&lt;/div&gt;
+</code></pre><pre><code>&lt;script&gt;
+Vue.component(&apos;button-counter&apos;, {
+  template: &apos;&lt;button v-on:click=&quot;increment&quot;&gt;{{ counter }}&lt;/button&gt;&apos;,  // &#x70B9;&#x51FB;&#x65F6;&#x89E6;&#x53D1;&#x5B50;&#x7EC4;&#x4EF6;&#x4E8B;&#x4EF6;
+  data: function () {
+    return {
+      counter: 0
+    }
+  },
+  methods: {
+    increment: function () {
+      this.counter += 1
+      this.$emit(&apos;increment&apos;)  // emit&#x5411;&#x7236;&#x7EC4;&#x4EF6;&#x4F20;&#x9012;&#x8BE5;increment&#xFF0C;&#x7EC4;&#x4EF6;&#x4E0A;&#x76D1;&#x542C;&#x5230;increment&#xFF0C;&#x89E6;&#x53D1;&#x7236;&#x7EC4;&#x4EF6;&#x7684;incrementTotal
+    }
+  },
+})
+
+new Vue({
+  el: &apos;#counter-event-example&apos;,
+  data: {
+    total: 0
+  },
+  methods: {
+    incrementTotal: function () {
+      this.total += 1
+    }
+  }
+})
+&lt;/script&gt;
+</code></pre><h4 id="&#x5B50;&#x7EC4;&#x4EF6;&#x7D22;&#x5F15;">&#x5B50;&#x7EC4;&#x4EF6;&#x7D22;&#x5F15;</h4>
+<ul>
+<li>ref &#x4E3A;&#x5B50;&#x7EC4;&#x4EF6;&#x6307;&#x5B9A;&#x4E00;&#x4E2A;&#x7D22;&#x5F15;ID</li>
+</ul>
+<pre><code>&lt;div id=&quot;parent&quot;&gt;
+  &lt;user-profile ref=&quot;profile&quot;&gt;&lt;/user-profile&gt;
+&lt;/div&gt;
+</code></pre><pre><code>&lt;script&gt;
+var parent = new Vue({ el: &apos;#parent&apos; })
+
+// &#x8BBF;&#x95EE;&#x5B50;&#x7EC4;&#x4EF6;
+var child = parent.$refs.profile
+&lt;/script&gt;
+``
+
+&gt; &#x5F53; ref &#x548C; v-for &#x4E00;&#x8D77;&#x4F7F;&#x7528;&#x65F6;&#xFF0C;ref &#x662F;&#x4E00;&#x4E2A;&#x6570;&#x7EC4;&#xFF0C;&#x5305;&#x542B;&#x76F8;&#x5E94;&#x7684;&#x5B50;&#x7EC4;&#x4EF6;&#x3002;
+
+
+##### &#x53CC;&#x5411;&#x7ED1;&#x5B9A; prop&#x6DFB;&#x52A0;&#x4FEE;&#x9970;&#x7B26;
+
+- .sync (vue 2.3+)
+
+&lt;comp :foo.sync=&quot;bar&quot;&gt;&lt;/comp&gt;
+
+### &#x7EC4;&#x4EF6;&#x5D4C;&#x5957;&#x89C4;&#x5219;
+
+`&lt;ul&gt;&#xFF0C;&lt;ol&gt;&#xFF0C;&lt;table&gt;&#xFF0C;&lt;select&gt;` &#x9650;&#x5236;&#x4E86;&#x80FD;&#x88AB;&#x5B83;&#x5305;&#x88F9;&#x7684;&#x5143;&#x7D20;
+
+
+&#x81EA;&#x5B9A;&#x4E49;&#x7EC4;&#x4EF6; &lt;my-row&gt; &#x88AB;&#x8BA4;&#x4E3A;&#x662F;&#x65E0;&#x6548;&#x7684;&#x5185;&#x5BB9;&#xFF0C;&#x56E0;&#x6B64;&#x5728;&#x6E32;&#x67D3;&#x7684;&#x65F6;&#x5019;&#x4F1A;&#x5BFC;&#x81F4;&#x9519;&#x8BEF;&#x3002;&#x53D8;&#x901A;&#x7684;&#x65B9;&#x6848;&#x662F;&#x4F7F;&#x7528;&#x7279;&#x6B8A;&#x7684; is &#x5C5E;&#x6027;&#x3002;
+</code></pre><p><table>
+  <tr is="my-row"></tr>
+</table></p>
+<pre><code>
+## SPA  (vue-router&#x5E93;)
+</code></pre><p><div id="box">
+    <a v-link="{path: &apos;/reg&apos;}">register</a>
+    <a v-link="{path: &apos;/log&apos;}">login</a>
+    <router-view></router-view>
+</div></p>
+<p><script>
+    var Reg = Vue.extend({
+        template: &#39;<div>regsiter</div>&#39;
+    });</p>
+<pre><code>var Log = Vue.extend({
+    template: &#39;&lt;div&gt;login&lt;/div&gt;&#39;
+});
+
+// 把组件加进路由
+var app = Vue.extend({});
+var Router = new VueRouter();
+
+Router.map({
+    &#39;/reg&#39;: {
+        component: Reg
+    },
+    &#39;/log&#39;: {
+        component: Log
+    }
+});
+
+Router.start(app, &#39;#box&#39;);      // 开启路由
+</code></pre><p>&lt;/script&gt;</p>
+<pre><code>
+## 交互(vue-resource库)
+
+1. get
+2. post **注意：post需要设置请求头emulateJSON**
+3. jsonp
+</code></pre><p><script>
+methods: {
+    get: function() {
+        this.$http.get(&#39;xxx.txt&#39;, {a: 1, b: 2}).then(function(res) {    // 成功回调函数
+            console.log(res);
+            console.log(res.data);
+        }, function(res) {      // 失败回调函数
+            console.log(res.data);
+        })
+    }
+}</p>
+<p>methods: {
+    post: function() {
+        // post方式需设置请求头emulateJSON
+        this.$http.post(&#39;xxx.txt&#39;, {a: 1, b: 2}, {emulateJSON: true}).then(function(res) {  // 成功回调函数
+            console.log(res);
+            console.log(res.data);
+        }, function(res) {      // 失败回调函数
+            console.log(res.data);
+        })
+    }
+}</p>
+<p>methods: {
+    get: function() {
+        this.$http.jsonp(&#39;<a href="https://xxx?">https://xxx?</a>&#39;, {wd: 2}, {jsonp: &#39;cb&#39;}).then(function(res) {   // 成功回调函数
+            console.log(res);
+            console.log(res.data);
+        }, function(res) {      // 失败回调函数
+            console.log(res.data);
+        })
+    }
+}</p>
+<p>&lt;/script&gt;
+```</p>
+<h2>vue构造器</h2>
+<ul>
+<li><p>el 实例挂载目标</p>
+</li>
+<li><p>data 设置数据对象</p>
+</li>
+<li><p>methods 方法</p>
+</li>
+<li><p>computed 计算属性</p>
+</li>
+<li><p>watch 观察</p>
+</li>
+<li><p>mounted 生命钩子函数</p>
+</li>
+<li><p>directives 自定义局部指令</p>
+</li>
+<li><p>components 局部注册组件</p>
+</li>
+<li><p>filters 过滤器</p>
+</li>
+</ul>
+<h2>实例的生命周期</h2>
+<p><img src="http://cn.vuejs.org/images/lifecycle.png" alt="vue实例的生命周期">
+<img src="https://qianduan.debuggap.com/image.b6b05c1a1b16.png" alt="vue实例的生命周期">
+<img src="https://qianduan.debuggap.com/image.3ea6b2930269.png" alt="生命周期实例代码">
+<img src="https://qianduan.debuggap.com/image.3b51cb21948b.png" alt="生命周期钩子"></p>
+<ul>
+<li><p>beforeCreate 实例初始化之后</p>
+</li>
+<li><p>created 实例创建完成之后被调用</p>
+</li>
+<li><p>beforeMount 在挂载开始之前被调用</p>
+</li>
+<li><p>mounted el被新创建的vm.$el替换，挂载到实例上</p>
+</li>
+<li><p>beforeUpdate 数据更新时调用</p>
+</li>
+<li><p>updated 数据更新之后调用</p>
+</li>
+<li><p>beforeDestory 实例销毁之前调用</p>
+</li>
+<li><p>destoryed 实例销毁之后调用</p>
+</li>
+</ul>
+</script></p>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="v1.html" class="navigation navigation-prev " aria-label="Previous page: 1、v1">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="深入.html" class="navigation navigation-next " aria-label="Next page: 3、深入">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"2、v2","level":"1.3","depth":1,"next":{"title":"3、深入","level":"1.4","depth":1,"path":"vue/深入.md","ref":"./vue/深入.md","articles":[]},"previous":{"title":"1、v1","level":"1.2","depth":1,"path":"vue/v1.md","ref":"./vue/v1.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"vue/v2.md","mtime":"2018-05-02T06:53:56.537Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-05-02T07:05:05.183Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
